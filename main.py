@@ -58,3 +58,17 @@ for x in mat:
     for i, y in enumerate(x):
         print(("{:3}").format(y), end="  ")
     print("")
+
+input_size = 784
+output_size = 10
+hidden_size = 128
+
+model = train_model(
+    input_size, hidden_size, output_size,
+    x_train, y_train
+)
+
+test_model(
+    model, input_size, output_size,
+    x_test, y_test
+)

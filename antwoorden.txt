@@ -1,0 +1,13 @@
+Opdracht 1.1: De inputlaag
+Vraag: Hoe groot moet de inputlaag zijn?
+Antwoord: De inputlaag moet 784 invoerwaarden bevatten, omdat iedere afbeelding 28 × 28 pixels heeft. Elke pixel wordt weergegeven door één grijswaarde.
+Opdracht 1.2: De outputlaag
+Vraag: Hoe groot moet de outputlaag zijn?
+Antwoord: De outputlaag moet 10 neuronen bevatten, omdat het model de cijfers 0 tot en met 9 moet kunnen herkennen. Elk neuron vertegenwoordigt één mogelijk cijfer.
+Opdracht 1.3: De verborgen laag
+Vraag 1: Hoe groot moet de verborgen laag minimaal zijn om een goede prestatie te halen?
+Antwoord: Dit moet ik onderzoeken door verschillende waarden voor hidden_size te testen. Ik begin met 128 neuronen en probeer vervolgens kleinere waarden, bijvoorbeeld 8, 16, 32 en 64. Ik vergelijk de nauwkeurigheid op de testset om te bepalen wat de kleinste verborgen laag is die nog voldoende goede resultaten behaalt.
+Vraag 2: Waarom zouden we op zoek zijn naar de kleinste hidden_size?
+Antwoord: Een kleinere verborgen laag heeft minder neuronen en daardoor doorgaans minder parameters. Hierdoor kan het model minder geheugen gebruiken en sneller trainen. Het doel is om met zo weinig mogelijk neuronen toch een goede nauwkeurigheid te behalen.
+Vraag 3: Wat is eigenlijk een 'goede' prestatie? Hoe kunnen we dat beoordelen?
+Antwoord: Een goede prestatie betekent dat het model veel handgeschreven cijfers correct herkent. Dit beoordeel ik aan de hand van de nauwkeurigheid (accuracy) op de testset. Ik kan bijvoorbeeld minimaal 95% nauwkeurigheid als streefwaarde kiezen. Door de resultaten van verschillende verborgen lagen te vergelijken, kan ik bepalen welke configuratie aan deze eis voldoet.
